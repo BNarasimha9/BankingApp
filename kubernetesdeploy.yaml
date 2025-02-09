@@ -18,7 +18,7 @@ spec:
       - name: bankapp-eta-container
         image: bnarasimha582/bankapp-eta-app
         ports:
-        - containerPort: 8080
+        - containerPort: 8089
 ---
 apiVersion: v1
 kind: Service
@@ -32,6 +32,6 @@ spec:
 
   type: NodePort
   ports:
-  - nodePort: 31032  
-    port: 8080
-    targetPort: 8080
+  - nodePort: 31038 
+    port: 8089
+    targetPort: 8089
